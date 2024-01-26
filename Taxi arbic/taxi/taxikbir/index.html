@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>صفحة سائق الطاكسي</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="/taxi/css/hedare.css">
+</head>
+<body onload="initializeMap()">
+
+
+  <div class="container " >
+    <div class="log1">
+      
+    <a href="#" >  <img src="/taxi/photo/taxiow-low-resolution-logo-color-on-transparent-background.png" alt=""></a>
+  
+  </div>
+    <div id="mainbox" onclick="openFunction()">&#9776;</div>
+    <nav class="nav-list" id="menu">
+      
+       <div class="logo ">
+        <div class="hidden">
+            <a href="#" >  <img src="/taxi/photo/taxiow-low-resolution-logo-color-on-transparent-background.png" alt=""></a>
+        </div>
+    </div>
+    
+       <div class="center-txt">
+        <div class="hidden">
+       <a href="/taxi/taxi.php" class="ts"> HOME</a>
+       <a href="#">ABOUT US</a>
+       <a href="#">HELP CENTER</a>
+       <a href="#">CONTACTS</a>
+        </div>
+       <form action="sr">
+        <div class="hidden">
+           <div class="input-wrapper">
+               <button class="icon"> 
+                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="25px" width="25px">
+                   <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#fff" d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"></path>
+                   <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#fff" d="M22 22L20 20"></path>
+                 </svg>
+               </button>
+               <input placeholder="search.." class="input" name="text" type="text">
+             </div>
+        </div>
+            </form>
+       </div>
+       <div class="logne ">
+        <div class="hidden">
+       <button onclick="redirectToPage2()"  >
+           <i class="fa-solid fa-taxi fa-bounce" style="color: #ffe014;"></i> Order Online
+       </button >
+        </div>
+       </div> 
+       <div class="closebtn" onclick="closeFunction()">&times;</div> 
+     
+      
+      </nav>
+
+  </div>
+
+
+  <!------------>
+    <center class="center">
+
+  <h1>صفحة سائق الطاكسي</h1>
+  <form onsubmit="event.preventDefault(); searchStreets();">
+    <label for="cityInput">ادخل اسم المدينة:</label>
+    <input type="text" id="cityInput">
+    <button type="submit">بحث</button>
+  </form>
+  <div id="map" style="height: 400px;"></div>
+  <div id="results"></div>
+
+
+
+
+
+</center>
+
+
+
+
+
+
+
+
+
+<script src="./mps.js"></script>
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEEz6EuBwN3abHp3s5ZImFO8TQfQuHWQc&callback=initMap&v=weekly"
+  defer></script> 
+  <script async
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEEz6EuBwN3abHp3s5ZImFO8TQfQuHWQc&libraries=places&callback=initMap">
+</script>
+   <script src="/taxi/JS/Translat.js"></script>
+</body>
+</html>

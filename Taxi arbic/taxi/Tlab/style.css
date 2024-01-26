@@ -1,0 +1,25 @@
+
+
+
+
+.Taleb{
+    height: 100vh;
+    max-width: 100%;
+}
+.maps{
+    min-width: 100%;
+    height: 350px;
+    position: relative;  
+}
+#map {
+    height: 300px;
+    max-width:70%;
+    left: 15%;
+      }
+
+
+      /*-------------------------FORM---------------*/
+
+      form{
+        text-align: center;
+      }

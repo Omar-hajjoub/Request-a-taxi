@@ -1,0 +1,429 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+.container{
+    position: fixed;
+    z-index: 2;
+   
+    
+}
+a{
+  text-decoration: none;
+}
+.container-1{
+    top: 60px;
+    height: 90%;
+}
+.container .log1 .user{
+    display: none;
+}
+.container .nav-list .user {
+margin-right: 40px;
+position: relative;
+display: inline-block;
+cursor: pointer;
+}
+.container .nav-list .user .user-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   right: -35px;
+   border-radius: 20px 20px;
+    z-index: 1;
+  }
+
+  .nav-list .user .btn{
+    display: flex;
+    gap: 20px;
+ }
+ .nav-list .btntxi{
+position: relative;
+
+ }
+ .nav-list  .btntxi p{
+    position: absolute;
+background-color: #defb07f9;
+width: 120px;
+border-radius: 30px 80px;
+height: 20px;
+text-align: center;
+left: -30px;
+top: -26px;
+display: none;
+
+ }
+ .nav-list  .btntxi:hover p{
+display: block;
+ }
+ .container .nav-list .btntxi button{
+  padding: 14px 10px;
+  border-radius: 50%;
+  background-color: #efe8e8;
+  border: none;
+position: relative;
+cursor: pointer;
+
+}
+ .nav-list .user .btn .btnusr{
+    position: relative;
+     }
+     .nav-list .user   .btn .btnusr p{
+        position: absolute;
+    background-color: #defb07f1;
+    width: 120px;
+    border-radius: 30px 80px;
+    height: 20px;
+    text-align: center;
+    left: -30px;
+    display: none;
+    top: -21px;
+    
+     }
+     .nav-list .user .btn .btnusr:hover p{
+    display: block;
+    
+     }
+ .container .nav-list .user button{
+    padding: 14px 5px;
+    border-radius: 50%;
+    background-color: #050404;
+    border: none;
+position: relative;
+
+ }
+    .container .nav-list  .user button #user{
+        font-size: 42px;
+        padding-top: 10px;
+        cursor: pointer;
+    }
+    .container .nav-list   #TXI{
+        font-size: 40px;
+        cursor: pointer;
+    }
+  
+  .container .nav-list .user  .user-dropdown ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+  }
+  
+  .container .nav-list .user  .user-dropdown li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #090906;
+  }
+  
+  .container .nav-list .user  .user-dropdown li a:hover {
+    background-color: #defb07;
+   
+  }
+  
+  .container .nav-list   .user:hover .user-dropdown {
+    display: block;
+  }
+  .container .nav-list .user  .active{
+    background-color: #defb07;
+  }
+
+
+
+
+  .cart_item {
+    box-shadow: 5px 1px 30px 1px rgb(238, 236, 236);
+    background-color: rgb(252, 251, 251);
+    MAX-width: 50%;
+    display: flex; 
+    flex-wrap: wrap;
+  padding: 30px;
+   }
+  
+   .cart_item #img1{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #dfdfdf;
+    margin-left: -20px;
+    margin-top: -20px;
+  
+   }
+
+
+   #fil{
+    margin-left: -20px;
+   }
+
+
+   .usrelog{
+    display: flex;
+    align-items: center;
+    
+    background-color: #f9f906;
+    position: relative;
+    
+   }
+
+   #sign-out a{
+    text-decoration: none;
+  }
+   #sign-out{
+    color:#0b0b0b;
+    position: absolute;
+     bottom: 3px;
+     left: 14px;
+     border-radius: 30px 20px;
+     width: 40%;
+     border: none;
+     background-color: #f12704;
+     padding: 4px 0;
+     transition: 2.5s;
+     font-size: 14px;
+     box-shadow: 3px 2px 2px 1px black;
+     text-decoration: none;
+   }
+   #sign-out:hover{
+    cursor: pointer;
+    transform: scale(0.9) ;
+    font-size: 18px;
+    
+   }
+
+
+
+   .logt{
+    position: relative;
+    text-align: center;
+    min-width: 50%;
+   }
+   .logt h1{
+    position: absolute;
+    top: -50px;
+    left: 45px;
+    border-bottom: #090906 2px solid;
+    text-align: center;
+   }
+
+
+   /*-------------------------Our-services"--------------------------*/
+  
+   /*-------------------------Our-services"--------------------------*/
+
+   @media screen and (max-width:980px) {
+ .log1 img{
+    width: 150px;
+    height: 100px;
+    margin-top: 15px;
+ }
+ .btn{
+    display: flex;
+ }
+ .btntxi{
+position: relative;
+left: 280px;
+top: 13px;
+ }
+.btntxi p{
+    position: absolute;
+background-color: #defb075a;
+width: 120px;
+border-radius: 30px 80px;
+height: 20px;
+text-align: center;
+left: -30px;
+top: -25px;
+display: none;
+
+ }
+ .btntxi:hover p{
+display: block;
+
+ }
+ .btn .btnusr{
+    position: relative;
+     }
+     .btn .btnusr p{
+        position: absolute;
+    background-color: #defb075a;
+    width: 120px;
+    border-radius: 30px 80px;
+    height: 20px;
+    text-align: center;
+    left: -30px;
+    top: -25px;
+    display: none;
+    
+     }
+     .container .log1 .btntxi button{
+      padding: 14px 10px;
+      border-radius: 50%;
+      background-color: #f9f9f5;
+      border: none;
+  position: relative;
+  box-shadow: 1px 0px 2px 3px rgb(245, 241, 241), -2px 6px ;
+  
+   }
+     .btn .btnusr:hover p{
+    display: block;
+    
+     }
+ .container .log1 .user button{
+    padding: 23px 10px;
+    border-radius: 50%;
+    background-color: #090909;
+    border: none;
+position: relative;
+
+ }
+    .container .log1 .user button #user{
+        font-size: 40px;
+        cursor: pointer;
+    }
+    .container .log1 .user #TXI{
+        font-size: 40px;
+        cursor: pointer;
+    }
+    .container .nav-list .user{
+        display: none;
+    }
+
+
+
+    .container .log1 .user {
+        margin-right: 40px;
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+       
+        left: -13px;
+        top:15px;
+        
+        }
+        .container .log1 .user .user-dropdown {
+            display: none;
+            position: absolute;
+            background-color: #fdfafa;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+           right: -35px;
+           border-radius: 90px 90px 30px 20px;
+            z-index: 1;
+            top: 60px;
+          }
+        
+
+          
+          .container .log1 .user  .user-dropdown ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+          
+          }
+          
+          .container .log1 .user  .user-dropdown li a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #090906;
+          }
+          
+          .container .log1 .user  .user-dropdown li a:hover {
+            background-color: #defb07;
+          }
+          .container .log1  .user:hover .user-dropdown {
+            display: block;
+          }
+          
+     
+          .container .log1 .user  .active{
+            background-color: #eeeeeb;
+          }
+        
+        
+        
+        
+          .cart_item {
+            box-shadow: 5px 1px 30px 1px rgb(238, 236, 236);
+            background-color: rgb(252, 251, 251);
+            MAX-width: 50%;
+            display: flex; 
+            flex-wrap: wrap;
+          padding: 30px;
+           }
+          
+           .cart_item #img1{
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            background: #dfdfdf;
+            margin-left: -20px;
+            margin-top: -20px;
+          
+           }
+        
+        
+           #fil{
+            margin-left: -20px;
+           }
+        
+        
+           .usrelog{
+            display: flex;
+            align-items: center;
+            
+            background-color: #f9f906;
+            position: relative;
+            
+           }
+        
+          
+           #sign-out{
+            color:#0b0b0b;
+            position: absolute;
+             bottom: 3px;
+             left: 14px;
+             border-radius: 30px 20px;
+             width: 40%;
+             border: none;
+             background-color: #f12704;
+             padding: 4px 0;
+             transition: 2.5s;
+             font-size: 14px;
+             box-shadow: 3px 2px 2px 1px black;
+           }
+           #sign-out:hover{
+            cursor: pointer;
+            transform: scale(0.9) ;
+            font-size: 18px;
+            
+           }
+        
+        
+        
+           .logt{
+            position: relative;
+            text-align: center;
+            min-width: 50%;
+           }
+           .logt h1{
+            position: absolute;
+            top: -50px;
+            left: 45px;
+            border-bottom: #090906 2px solid;
+            text-align: center;
+           }
+           .log1{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           }
+   }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>صفحة العامل</title>
+</head>
+<body>
+  <h1>استلام طلب العميل</h1>
+  <form>
+    <label for="customerName">اسم العميل:</label>
+    <input type="text" id="customerName" name="customerName" required><br><br>
+    
+    <label for="contactDetails">تفاصيل الاتصال:</label>
+    <input type="text" id="contactDetails" name="contactDetails" required><br><br>
+    
+    <label for="orderDetails">تفاصيل الطلب:</label>
+    <textarea id="orderDetails" name="orderDetails" required></textarea><br><br>
+    
+    <input type="submit" value="استلام الطلب">
+  </form>
+
+  <h2>تفاصيل الطلب:</h2>
+  <p>اسم العميل: <span id="customerNameDisplay"></span></p>
+  <p>تفاصيل الاتصال: <span id="contactDetailsDisplay"></span></p>
+  <p>تفاصيل الطلب: <span id="orderDetailsDisplay"></span></p>
+  
+  <button onclick="acceptRequest()">قبول الطلب</button>
+  <button onclick="rejectRequest()">رفض الطلب</button>
+  
+  <h3>عدد التوصيلات:</h3>
+  <p id="deliveryCount">0</p>
+  
+  <h3>تعليقات العملاء:</h3>
+  <ul id="customerComments"></ul>
+
+  <script>
+    function acceptRequest() {
+      alert("تم قبول الطلب");
+      // يمكنك إرسال رسالة قبول للعميل هنا
+    }
+
+    function rejectRequest() {
+      alert("تم رفض الطلب");
+      // يمكنك إرسال رسالة رفض للعميل هنا
+    }
+  </script>
+</body>
+</html>

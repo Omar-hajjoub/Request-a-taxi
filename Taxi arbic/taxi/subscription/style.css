@@ -1,0 +1,226 @@
+body{
+    background-color: rgb(242, 244, 244);
+}
+
+center{
+background-image:url(../photo/street_puddle_reflection_139688_1920x1080.jpg);
+background-size: cover;
+ min-height: 130vh;
+
+}
+.section{
+   flex-wrap: wrap;
+    position: relative;
+top: 170px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+   width: 60%;
+   border-radius: 20px;
+   background: linear-gradient(to right, rgb(11, 11, 11) 0%, rgb(143, 139, 14) 50%);
+}
+.section .scrip h1{
+    position: relative;
+   top: -40px;
+    font-size: 40px;
+color: aliceblue;
+}
+ .scrip{
+ 
+border: 1px solid rgb(11, 11, 11);
+
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+flex-wrap: wrap;
+padding-top: 90px;
+}
+.section .scrip input{
+  
+    text-align: center;
+     font-size: 15px;
+    font-weight: bolder;
+    padding: 5px 40px;
+    border: none;
+    margin-bottom: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.section .scrip .emaiil{
+    display: block;
+}.section .scrip .checkbox {
+    
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  position: relative;
+  right: 0;
+  
+   
+   
+}
+
+
+ .send button i{
+    display: none;
+    transition: 1.5s;
+   }
+  
+   .send button{
+    padding: 5px 45px;
+    background-color: #0a0808;
+    color: #e1e106;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    transition: 1.2s;
+   }
+.send button:hover{
+    padding: 7px 30px;
+    transform: scale(1.1);
+    
+   }
+    .send button:hover i{
+    display: inline-block;
+  
+   }
+   
+
+   /* nafida -----------------*/
+   /* تنسيقات النافذة القائمة */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* زر إغلاق النافذة */
+  .login{
+    margin-top: 20px;
+    display: none;
+  }
+
+  .login form h2{
+    position: relative;
+ top: -90px;
+ font-size: 45px;
+ font-weight: bolder;
+ font-family: 'Courier New', Courier, monospace;
+  }
+
+
+  .input-field {
+    max-width: 380px;
+    width: 100%;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    height: 55px;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+    text-align: center;
+  }
+  
+  .input-field i {
+    text-align: center;
+    line-height: 55px;
+    color: #acacac;
+    transition: 0.5s;
+    font-size: 1.1rem;
+  }
+  
+  .input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .input-field input::placeholder {
+    color: #aaa;
+    font-weight: 500;
+  }
+
+  .btn1 {
+    width: 150px;
+    background-color: #236ce9;
+    border: none;
+    outline: none;
+    height: 49px;
+    border-radius: 49px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+   
+    
+  
+   
+  }
+  
+  .btn1:hover {
+    background-color: #4d84e2;
+  }
+
+  #btnsig{
+    padding: 3px 13px;
+    background-color: rgba(255, 0, 0, 0.429);
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+margin-bottom: 15px;
+transition: 1.5s;
+  }
+  #btnsig:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+  }
+
+  #btnlogin{
+    padding: 3px 13px;
+    background-color: rgba(0, 55, 255, 0.667);
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+margin-bottom: 15px;
+transition: 1.5s;
+  }
+  #btnlogin:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+  }
+
+  
+
+
+
+  
+   @media screen and (max-width:980px){
+    center{
+        width: auto!important;
+        position: relative;
+     top: 90px;
+    }
+  }

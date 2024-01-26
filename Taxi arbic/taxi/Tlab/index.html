@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+ <div class="Taleb">
+
+
+
+ <form action="">
+    <h1>المدن المغربية</h1>
+    <select id="citySelect">
+      <option disabled selected>اختر مدينة</option>
+      <option value="الرباط">الرباط</option>
+      <option value="الدار البيضاء">الدار البيضاء</option>
+      <option value="فاس">فاس</option>
+      <option value="مراكش">مراكش</option>
+      <option value="طنجة">طنجة</option>
+      <option value="مكناس">مكناس</option>
+      <option value="أكادير">أكادير</option>
+      <option value="القنيطرة">القنيطرة</option>
+      <option value="وجدة">وجدة</option>
+      <option value="العيون">العيون</option>
+    </select>
+    <button onclick="searchCity()" id="btn">ابحث</button>
+ </form>
+   
+
+    <div class="maps"> 
+      <div id="map"></div>
+    </div>
+
+
+
+
+
+
+</div>
+   <script src="inedx.js"></script> 
+   <script
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEEz6EuBwN3abHp3s5ZImFO8TQfQuHWQc&callback=initMap&v=weekly"
+   defer
+ ></script>
+</body>
+</html>
